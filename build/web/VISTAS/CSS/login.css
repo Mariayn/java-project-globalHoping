@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 9, 2023, 1:28:03 AM
+    Author     : maria
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DEEDFF;
+  width: 100%;
+  color: rgb(9, 30, 66);
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #D8D7DC;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+}
+
+header div{
+    margin-left: 20px;
+}
+
+#logo {
+  height: 100px;
+}
+
+main {
+  display: flex;
+  padding: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 30%;
+  margin: 80px auto;
+  background-color: #ffffff;
+  color: #6a787c;
+  /**min-height: 80vh;**/
+}
+
+.emailInput {
+  width: 100%;
+  border-radius: 4px;
+  padding: 7px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  color: #40484a;
+  background-color: #edeff0;
+  border: none;
+  margin-bottom: 20px;
+}
+
+#submit {
+  cursor: pointer;
+  color: #ffffff;
+  margin-top: 18px;
+
+  background-color: rgb(9, 30, 66);
+  letter-spacing: 0.11rem;
+  border-width: 2px;
+  border: none;
+  font-size: 14px;
+  height: 40px;
+  line-height: 36px;
+  padding: 0 15px;
+}
+
+#signup {
+  margin-bottom: 20px;
+  display:flex;
+  justify-content: flex-start;
+}
+
+#signup a {
+  text-decoration: none;
+  color: #00754a;
+  font-weight: bold;
+  margin-left: 2px;
+}

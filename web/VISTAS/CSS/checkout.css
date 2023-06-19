@@ -1,0 +1,177 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2023, 6:37:10 PM
+    Author     : maria
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DEEDFF;
+  width: 100%;
+  color: rgb(9, 30, 66);
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D8D7DC;
+}
+
+#logo {
+  height: 100px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(9, 30, 66);
+  font-weight: bold;
+}
+
+#profile{
+    margin-left: 30px;
+}
+
+.underline:hover {
+  border-bottom: 1px solid rgb(9, 30, 66);
+}
+
+main{
+     display:flex;
+    width:70%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin:0 auto;
+}
+
+h1{
+    font-family: Aleo,Georgia,serif;
+}
+
+#container{
+  margin-top:20px;
+   display:flex;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 20px;
+  border: 1px solid #afb9c1;
+  color:#32404E;
+   border-radius: 5px;
+}
+
+#summaryDiv{
+  width:40%;
+  padding: 10px;
+}
+
+#summary{
+  margin-bottom:50px;
+}
+
+p{
+  line-height: 1.5;
+    font-size: 1.25em;
+    margin-bottom: 2em;
+}
+
+
+#checkout{
+   width:60%;
+  display: flex;
+  padding: 0 60px 20px;/* top right and left bottom*/
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top:20px;
+}
+
+input{
+  width: 100%;
+  padding: 0.6em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: #40484a;
+  background-color: #edeff0;
+  border: 1px solid #afb9c1;
+}
+
+
+#submit {
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 18px;
+  font-weight: bold;
+  background-color: rgb(23, 43, 77);
+  border: 1px solid #afb9c1;
+  font-size: 14px;
+  height: 40px;
+  line-height: 36px;
+  padding: 0 15px;
+}
+
+#mje{
+  color:#bf0d0d;
+}
+
+.checkbox{
+  display:flex;
+  justify-content: center;
+ padding:10px;
+
+}
+.checkbox input{
+   width:20px;
+   height:20px;
+   margin-right:10px;
+}
+
+#divAmount{
+    display:flex;
+  justify-content: center;
+  align-items: center;
+  width:250px;
+}
+
+#amount{
+  border: 1px solid #afb9c1;
+  display:flex;
+  
+  
+}
+#amount span{
+  background-color:#edeff0;
+  border: 1px solid #afb9c1;
+  border-left:none;
+  font-weight:bold;
+  text-align:center;
+  line-height: 36px;
+  padding-right:10px;
+}
+
+#amount input{
+  border-right:none;
+}
+
+h3{
+  margin-bottom:10px;
+  font-family: Aleo,Georgia,serif;
+   line-height: 1.5;
+    font-size: 1.25em;
+}

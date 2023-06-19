@@ -1,0 +1,90 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 14, 2023, 5:24:25 PM
+    Author     : maria
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DEEDFF;
+  width: 100%;
+  color: rgb(9, 30, 66);
+}
+
+main{
+    width: 100%;
+}
+
+div{
+    height: 10vh;
+   display:flex;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+}
+div a{
+  text-decoration:none;
+  margin-left:20px;
+  color: #3b46cb;
+    font-weight: bold;
+}
+
+section{
+    padding-top: 10px;
+     display:flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction:column;
+     height: 90vh;
+     /*
+   min-height: 90vh;*/
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 1px;
+}
+
+td a{
+    text-decoration:none;
+  color:#091E42;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(23, 43, 77);
+  color: white;
+}

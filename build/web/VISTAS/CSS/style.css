@@ -1,0 +1,348 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 29, 2023, 10:37:32 PM
+    Author     : maria
+*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  background-color: #DEEDFF;
+  width: 100%;
+  color: rgb(9, 30, 66);
+}
+
+.cookies-box{
+    position: fixed;
+    bottom:0;
+    background: #fff;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    box-shadow: -2px 0 14px 8px rgba(0,0,0,.8);
+    
+}
+
+.cookies-box .container-cookies{
+    padding:20px 0;
+    max-width:90%;
+    display:flex;
+    align-items: center;
+}
+
+.cookies-box .container-cookies .parrafo p {
+    color:#fff;
+}
+
+.cookies-box .container-cookies .parrafo p a{
+    color:#cccccc;
+}
+
+.cookies-box .container-cookies .botones{
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.cookies-box .container-cookies .botones button{
+    background: none;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  padding: 7px 20px;
+  margin: 6px;
+  color: #000000;
+  cursor: pointer;
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #D8D7DC;
+}
+
+#logo {
+  height: 100px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(9, 30, 66);
+  font-weight: bold;
+}
+header a:hover {
+  border-bottom: 1px solid rgb(9, 30, 66);
+}
+
+#profile{
+    margin-left: 30px;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+  min-height: 85vh;
+  background-color: #DEEDFF;
+  
+}
+
+h2{  
+    text-align: center;
+    padding: 15px;
+}
+
+/* NEWS CARDS */
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 25px; */
+  /* margin: 20px 0; */
+  align-content: center;
+  justify-content: center;
+  justify-items: stretch;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.news-cards img {
+
+    aspect-ratio: 1;
+    margin-top: 5px;
+    width: 13em;
+}
+
+.news-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.news-cards a {
+  padding: 10px 0;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.divProject{
+  /* border: 10px solid; */
+  /* border-image: repeating-linear-gradient(50deg, #f49b90, #172B4D, #f49b90 20px) 10; */
+  border-style: solid;
+  border-color: WHITE;
+  background-color: #697599;
+  text-align: center;
+  color: white;
+  margin-left: -2px;
+  transition: all 3s ease;
+}
+
+.divProject:hover{
+  /* border: 10px solid; */
+  /* border-image: repeating-linear-gradient(50deg, #f49b90, #172B4D, #f49b90 20px) 10; */
+  border-style: double;
+  border-color: WHITE;
+  background-color: #1233c4;
+  text-align: center;
+  color: white;
+  margin-left: -2px;
+}
+
+.divProject a{
+   text-decoration: none;
+}
+#text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*FOOTER*/
+footer {
+  background-color:rgb(23, 43, 77);
+  color:rgb(255, 255, 255);
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  height: 15vh;
+  margin-top: 6px;
+
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "links1 links2 social copyright";
+  gap: 5px;
+  justify-items: stretch;
+  align-items: center;
+
+  /*justify-content: space-between;
+  align-content: stretch;
+  */
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+
+}
+
+.footer__links a {
+  line-height: 1.9;
+  text-decoration: none;
+  transition: color 150ms ease-in-out;
+  color: #fff;
+}
+
+.footer__links a:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.footer__social a {
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.footer__social a svg path {
+  transition: fill 150ms ease-in-out;
+}
+.footer__social a:hover svg path {
+  fill: #31d35c;
+}
+
+.copyright {
+  font-size: 12px;
+
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 #f49b90, 6px 6px 0 #f28b7d,
+    9px 9px #f07a6a, 12px 12px 0 #ee6352;
+  
+  font-weight: 400;
+  text-transform: uppercase;
+ 
+  text-align: center;
+  margin: 0;
+  color: #f6aca2;
+
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 #f49b90;
+  }
+  20% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d;
+  }
+  30% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+  }
+  40% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+      12px 12px 0 #ee6352;
+  }
+  50% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+      12px 12px 0 #ee6352;
+  }
+  60% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d, 9px 9px #f07a6a,
+      12px 12px 0 #ee6352;
+  }
+  70% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d, 9px 9px #f07a6a;
+  }
+  80% {
+    text-shadow: 3px 3px 0 #f49b90,
+      6px 6px 0 #f28b7d;
+  }
+  90% {
+    text-shadow: 3px 3px 0 #f49b90;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
